@@ -1,3 +1,21 @@
-﻿body
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    /*font-family: 'Segoe UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif, Verdana, sans-serif;*/
+    font-family: Roboto Condensed, 'Cambria Math';
+    font-size: 22px;
+    /*font-style:italic;*/
+}
+p /*Селектором может быть дескриптор, id, либо класс*/
 {
+    /*набор стилей:*/
+    text-align:justify; 
+    /*  
+        у каждого стиля имя и значения
+        Синтаксис описания стиля:
+        name:value;
+        У некоторых стилей может быть несколько значений,
+        в таком случае они перечисляются через ПРОБЕЛ:
+        name:value1 value2 ... valueN;
+        Для числовых значений обязательно нужно задавать единицы измерения.
+    */
 }
