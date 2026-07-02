@@ -3,6 +3,7 @@ body {
     /*font-family: 'Segoe UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif, Verdana, sans-serif;*/
     font-family: Roboto Condensed, 'Cambria Math';
     font-size: 22px;
+    padding: 50px;
     /*font-style:italic;*/
 }
 p /*Селектором может быть дескриптор, id, либо класс*/
@@ -18,4 +19,20 @@ p /*Селектором может быть дескриптор, id, либо 
         name:value1 value2 ... valueN;
         Для числовых значений обязательно нужно задавать единицы измерения.
     */
+}
+figure
+{
+    text-align:center;
+    font-style:italic;
+    font-weight:200;
+}
+.cite
+{
+   border-left: solid 5px blue;
+   padding-left: 15px;
+   margin-left: 50px;
+   /*border-width:1px;
+   border-style:solid;*/
+   /*margin:32px;*/
+   /*padding:50px 100px 200px 300px;*/
 }
