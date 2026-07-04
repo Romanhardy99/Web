@@ -1,0 +1,12 @@
+﻿body
+{
+}
+table {
+    border: solid 3px;
+}
+td {
+    border: solid 3px;
+    width:70px;
+    height:20px;
+
+}
