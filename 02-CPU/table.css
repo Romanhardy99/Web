@@ -2,12 +2,24 @@
 {
     border: solid 5px;
     border-collapse:collapse;
+    margin: 32px auto;
 }
-thead
+table:hover
 {
-    border-bottom:solid 3px;
-    background-color:#614175;
-    color:aliceblue;
+    box-shadow: 0 50px 15px gray;
+}
+tr:hover {
+/*
+	box-shadow: [direction] x y blur spread color;
+	outset
+*/
+    box-shadow: inset 0 -3px 10px 1px green;
+}
+
+thead {
+    border-bottom: solid 3px;
+    background-color: #5555AA;
+    color: aliceblue;
 }
 thead th
 {
@@ -23,7 +35,7 @@ tbody th{
     padding-left:5px;
     padding-right:15px;
 }
-tbody
+tbody td
 {
     text-align:center;
 }
