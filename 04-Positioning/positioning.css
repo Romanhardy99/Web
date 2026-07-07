@@ -1,0 +1,21 @@
+﻿body
+{
+}
+h1
+{
+    background-color:gray;
+}
+.logo {
+    position: fixed;
+    left: -100px;
+    top: 0px;
+    z-index: -1;
+    /*height:400px;*/
+    width: 100%;
+    filter: blur(75px) opacity(75%);
+}
+.picture{
+    width:200px;
+    height:200px;
+
+}
