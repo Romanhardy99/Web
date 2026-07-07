@@ -1,0 +1,30 @@
+﻿table
+{
+    border: solid 5px;
+    border-collapse:collapse;
+}
+thead
+{
+    border-bottom:solid 3px;
+    background-color:#614175;
+    color:aliceblue;
+}
+thead th
+{
+    padding:25px;
+}
+th, td
+{
+    border: solid 1px;
+}
+tbody th{
+    text-align:left;
+    padding:2px;
+    padding-left:5px;
+    padding-right:15px;
+}
+tbody
+{
+    text-align:center;
+}
+
