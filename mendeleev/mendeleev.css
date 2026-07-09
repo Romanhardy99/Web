@@ -35,3 +35,10 @@ td, th {
     font-size: 11px;
     color: white;
 }
+
+.num {
+    display: block;
+    font-size: 13px;
+    text-align: right; /* номер в правом углу, как в настоящей таблице */
+    font-weight: 400; /* не жирный, в отличие от символа */
+}
