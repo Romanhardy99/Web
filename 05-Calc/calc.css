@@ -58,13 +58,37 @@
     justify-content:center;
     align-content:center;*/
 }
-
-
-.control-button-signature{
-    margin-top:-5px;
-    margin-left:-2px;
-    align-content:center;
+.control-button:hover{
+    background-image:linear-gradient(
+        to bottom right,
+        rgb(149,149,249),
+        rgb(39,104,249),
+        rgb(149,149,249)
+    );
 }
+    .control-button[disabled], .control-button[disabled]:hover, .control-button[disabled]:active {
+        color: #BBBBBB;
+        border-color: #BBBBBB;
+        background-color: rgb(39, 104, 249);
+        background-image: none;
+        box-shadow: 
+            inset 3px 1px 7px 0px #2288FF, 
+            inset -2px -1px 5px 0px #0000BB;
+    }
+    .control-button:active {
+        background-image: none;
+        background-color: rgb(50, 50, 200);
+        box-shadow: 
+            inset -3px -1px 7px 0px #2288FF, 
+            inset 4px 2px 5px 0px #000088;
+    }
+
+
+    .control-button-signature {
+        margin-top: -5px;
+        margin-left: -2px;
+        align-content: center;
+    }
 .close-button-signature{
     margin:-2px 0 0 -1px;
 }
@@ -73,9 +97,20 @@
     box-shadow: inset 2px 1px 7px 0px #FF8888;
     box-shadow: inset -2px -1px 5px 0px #770000;
 }
+    .close-button:hover {
+        background-image: linear-gradient( to bottom right, rgb(220, 177, 157), rgb(255, 77, 57), rgb(220, 177, 157) );
+    }
+
+    .close-button:active {
+        background-color: rgb(220, 77, 57);
+        background-image: none;
+        box-shadow: inset -2px -1px 5px 0px #FF8888, inset 2px 1px 7px 0px #770000;
+    }
+
 .title-bar-icon-and-signature {
     display: flex;
     align-items: center;
+    text-shadow: 1px 1px 2px darkblue;
 }
 .title-bar-icon-and-signature, .title-bar-window-control-buttons{
     margin:0px 8px;
