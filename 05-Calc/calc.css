@@ -9,8 +9,8 @@
 .main-window
 {
     /*border:solid 1px;*/
-    width:400px;
-    height:300px;
+    width:325px;
+    height:350px;
 }
 .title-bar{
     width:100%;
@@ -122,6 +122,7 @@
         width: 24px;
         height: 24px;
     }
+    /*///////////////////////////////////////////////////////////////*/
 .client-rect {
     width: 100%;
     height: 262px;
@@ -138,4 +139,69 @@
     height: 258px;
     background-color: rgb(235, 233, 216);
     box-shadow: 0px 0px 2px 1px darkblue;
+}
+/*///////////////////////////////////////////////////////////////*/
+.menu-bar{
+    border-bottom: solid 1px white;
+}
+
+.menu-bar > bottom{
+    border:none;
+    background-color:rgb(235,233,216);
+    height:24px;
+}
+.menu-bar > buttom:hover{
+    background-color:#5555BB;
+    color:white;
+}
+/*///////////////////////////////////////////////////////////////*/
+.display-container
+{
+    padding:4px;
+    display:flex;
+    justify-content:center;
+}
+.display-container > input:focus-visible{
+    /*если поле 'disable', в этом нет необходимости*/
+    outline:none;
+}
+.display-container > input[disabled]
+{
+    background-color:white;
+}
+#display
+{
+    width:95%;
+    border:solid 1px gray;
+    border-radius:0px;
+    text-align:right;
+}
+/*///////////////////////////////////////////////////////////////*/
+.calc-buttons{
+    width:95%;
+    margin:8px 11px;
+    
+    display:grid;
+    grid-template-rows:repeat(4,auto);
+    grid-template-columns:repeat(5, auto);
+
+
+    /*grid-gap:8px*/
+    grid-row-gap:8px;
+}
+.clear-buttons
+{
+    grid-row:1;
+    grid-column-start:2;
+    grid-column-end:7;
+}
+.square{
+    width:30px;
+    height:30px;
+    border:solid 1px;
+}
+.calc-buttons button
+{
+    width:42px;
+    height:30px;
 }
