@@ -61,7 +61,7 @@
 .control-button:hover{
     background-image:linear-gradient(
         to bottom right,
-        rgb(149,149,249),
+        rgb(189,189,249),
         rgb(39,104,249),
         rgb(149,149,249)
     );
@@ -93,9 +93,8 @@
     margin:-2px 0 0 -1px;
 }
 .close-button {
-    background-color: rgb(186,99,87);
-    box-shadow: inset 2px 1px 7px 0px #FF8888;
-    box-shadow: inset -2px -1px 5px 0px #770000;
+    background-color: rgb(220,77,57);
+    box-shadow: inset 2px 1px 7px 0px #FF8888, inset -2px -1px 5px 0px #770000;
 }
     .close-button:hover {
         background-image: linear-gradient( to bottom right, rgb(220, 177, 157), rgb(255, 77, 57), rgb(220, 177, 157) );
@@ -145,12 +144,12 @@
     border-bottom: solid 1px white;
 }
 
-.menu-bar > bottom{
+.menu-bar > button{
     border:none;
     background-color:rgb(235,233,216);
     height:24px;
 }
-.menu-bar > buttom:hover{
+.menu-bar > button:hover{
     background-color:#5555BB;
     color:white;
 }
@@ -180,7 +179,6 @@
 .calc-buttons{
     width:95%;
     margin:8px 11px;
-    
     display:grid;
     grid-template-rows:repeat(4,auto);
     grid-template-columns:repeat(5, auto);
@@ -188,12 +186,14 @@
 
     /*grid-gap:8px*/
     grid-row-gap:8px;
+    grid-column-gap:5px;
 }
 
 .square {
-    width: 30px;
-    height: 30px;
-    border: solid 1px;
+    width: 26px;
+    height: 26px;
+    border: solid 2px;
+    margin-left:4px;
 }
 
 .calc-buttons button
@@ -210,4 +210,16 @@
 .clear-buttons > button{
     width: 79px;
     margin-right:1px;
+}
+
+.memory-button{
+    margin: 0px 7px 0px -2px;
+}
+.calc-buttons > button
+{
+    color:blue;
+}
+.calc-buttons > .memory-button, .calc-buttons > .operation-button, .clear-buttons > button
+{
+    color:red;
 }
