@@ -215,10 +215,22 @@
 .memory-button{
     margin: 0px 7px 0px -2px;
 }
-.calc-buttons > button
+.calc-buttons button
 {
     color:blue;
+    border:solid 1px darkblue;
+    border-radius:5px;
+    box-shadow: inset 0px -2px 3px lightgray;
 }
+.calc-buttons button:hover
+{
+    box-shadow: inset 0px -1px 5px 0px orange;
+}
+.calc-buttons button:active{
+    background-color:lightgray;
+    box-shadow: inset 0px -1px 5px 0px white,inset 0px 2px 1px darkgray;
+}
+
 .calc-buttons > .memory-button, .calc-buttons > .operation-button, .clear-buttons > button
 {
     color:red;
