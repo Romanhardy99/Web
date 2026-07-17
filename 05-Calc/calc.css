@@ -189,19 +189,25 @@
     /*grid-gap:8px*/
     grid-row-gap:8px;
 }
+
+.square {
+    width: 30px;
+    height: 30px;
+    border: solid 1px;
+}
+
+.calc-buttons button
+{
+    width:42px;
+    height:30px;
+}
 .clear-buttons
 {
     grid-row:1;
     grid-column-start:2;
     grid-column-end:7;
 }
-.square{
-    width:30px;
-    height:30px;
-    border:solid 1px;
-}
-.calc-buttons button
-{
-    width:42px;
-    height:30px;
+.clear-buttons > button{
+    width: 79px;
+    margin-right:1px;
 }
