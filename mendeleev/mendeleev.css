@@ -23,7 +23,7 @@ td, th {
 
 /* Один класс для всех ячеек с элементами */
 .element {
-    background-color: darkolivegreen;
+    background-color: #0B5345;
     transition: background-color 0.3s ease;
     color: white;
     font-size: 50px;
@@ -57,10 +57,10 @@ table:has(.element[data-group="2"]:hover) .element[data-group="2"] {
 /* Группа 3 */
 table:has(.element[data-group="3"]:hover) .element[data-group="3"] {
     background-color: #E74C3C !important;
-    color: #1a1a1a !important;
+    color: white !important;
     transform: scale(1.05);
     z-index: 2;
-    box-shadow: 0 0 20px rgba(255, 179, 71, 0.6);
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.6); /* Тень красная */
 }
 
 /* Группа 4 - Зеленый */
