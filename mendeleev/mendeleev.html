@@ -8,9 +8,10 @@
 <body>
     <div>Периодическая система химических элементов Д.И. Менделеева</div>
     <table>
+        <!-- СТРОКА 1-->
         <tr>
             <td>1</td>
-            <td class="element"><span class="num">1</span>H<span class="name">ВОДОРОД</span></td>
+            <td class="element" data-group="1"><span class="num">1</span>H<span class="name">ВОДОРОД</span><span class="mass">1.00794</span></td>
             <td></td>
             <td></td>
             <td></td>
@@ -27,12 +28,13 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="element">He<span class="name">ГЕЛИЙ</span></td>
+            <td class="element" data-group="2"><span class="num">2</span>He<span class="name">ГЕЛИЙ</span><span class="mass">4.0026</span></td>
         </tr>
+        <!-- СТРОКА 2-->
         <tr>
             <td>2</td>
-            <td class="element">Li<span class="name">ЛИТИЙ</span></td>
-            <td class="element">Be<span class="name">БЕРИЛЛИЙ</span></td>
+            <td class="element" data-group="4"><span class="num">3</span>Li<span class="name">ЛИТИЙ</span><span class="mass">6.941</span></td>
+            <td class="element" data-group="5"><span class="num">4</span>Be<span class="name">БЕРИЛЛИЙ</span><span class="mass">9.0121</span></td>
             <td></td>
             <td></td>
             <td></td>
@@ -43,17 +45,18 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="element">B<span class="name">БОР</span></td>
-            <td class="element">C<span class="name">УГЛЕРОД</span></td>
-            <td class="element">N<span class="name">АЗОТ</span></td>
-            <td class="element">O<span class="name">КИСЛОРОД</span></td>
-            <td class="element">F<span class="name">ФТОР</span></td>
-            <td class="element">Ne<span class="name">НЕОН</span></td>
+            <td class="element" data-group="1"><span class="num">5</span>B<span class="name">БОР</span><span class="mass">10.811</span></td>
+            <td class="element" data-group="1"><span class="num">6</span>C<span class="name">УГЛЕРОД</span><span class="mass">12.0107</span></td>
+            <td class="element" data-group="1"><span class="num">7</span>N<span class="name">АЗОТ</span><span class="mass">14.0067</span></td>
+            <td class="element" data-group="1"><span class="num">8</span>O<span class="name">КИСЛОРОД</span><span class="mass">15.9994</span></td>
+            <td class="element" data-group="3"><span class="num">9</span>F<span class="name">ФТОР</span><span class="mass">18.9984</span></td>
+            <td class="element" data-group="2"><span class="num">10</span>Ne<span class="name">НЕОН</span><span class="mass">20.1797</span></td>
         </tr>
+        <!-- СТРОКА 3-->
         <tr>
             <td>3</td>
-            <td class="element">Na<span class="name">НАТРИЙ</span></td>
-            <td class="element">Mg<span class="name">МАГНИЙ</span></td>
+            <td class="element" data-group="4"><span class="num">11</span>Na<span class="name">НАТРИЙ</span><span class="mass">22.9897</span></td>
+            <td class="element" data-group="5"><span class="num">12</span>Mg<span class="name">МАГНИЙ</span><span class="mass">24.3050</span></td>
             <td></td>
             <td></td>
             <td></td>
@@ -64,134 +67,140 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="element">Al<span class="name">АЛЮМИНИЙ</span></td>
-            <td class="element">Si<span class="name">КРЕМНИЙ</span></td>
-            <td class="element">P<span class="name">ФОСФОР</span></td>
-            <td class="element">S<span class="name">СЕРА</span></td>
-            <td class="element">Cl<span class="name">ХЛОР</span></td>
-            <td class="element">Ar<span class="name">АРГОН</span></td>
+            <td class="element" data-group="7"><span class="num">13</span>Al<span class="name">АЛЮМИНИЙ</span><span class="mass">26.9815</span></td>
+            <td class="element" data-group="1"><span class="num">14</span>Si<span class="name">КРЕМНИЙ</span><span class="mass">28.0855</span></td>
+            <td class="element" data-group="1"><span class="num">15</span>P<span class="name">ФОСФОР</span><span class="mass">30.9737</span></td>
+            <td class="element" data-group="1"><span class="num">16</span>S<span class="name">СЕРА</span><span class="mass">32.065</span></td>
+            <td class="element" data-group="3"><span class="num">17</span>Cl<span class="name">ХЛОР</span><span class="mass">35.453</span></td>
+            <td class="element" data-group="2"><span class="num">18</span>Ar<span class="name">АРГОН</span><span class="mass">39.948</span></td>
         </tr>
+        <!-- СТРОКА 4-->
         <tr>
-            <td >4</td>
-            <td class="element">K<span class="name">КАЛИЙ</span></td>
-            <td class="element">Ca<span class="name">КАЛЬЦИЙ</span></td>
-            <td class="element">Sc<span class="name">СКАНДИЙ</span></td>
-            <td class="element">Ti<span class="name">ТИТАН</span></td>
-            <td class="element">V<span class="name">ВАНАДИЙ</span></td>
-            <td class="element">Cr<span class="name">ХРОМ</span></td>
-            <td class="element">Mn<span class="name">МАРГАНЕЦ</span></td>
-            <td class="element">Fe<span class="name">ЖЕЛЕЗО</span></td>
-            <td class="element">Co<span class="name">КОБАЛЬТ</span></td>
-            <td class="element">Ni<span class="name">НИКЕЛЬ</span></td>
-            <td class="element">Cu<span class="name">МЕДЬ</span></td>
-            <td class="element">Zn<span class="name">ЦИНК</span></td>
-            <td class="element">Ga<span class="name">ГАЛЛИЙ</span></td>
-            <td class="element">Ge<span class="name">ГЕРМАНИЙ</span></td>
-            <td class="element">As<span class="name">МЫШЬЯК</span></td>
-            <td class="element">Se<span class="name">СЕЛЕН</span></td>
-            <td class="element">Br<span class="name">БРОМ</span></td>
-            <td class="element">Kr<span class="name">КРИПТОН</span></td>
+            <td>4</td>
+            <td class="element" data-group="4"><span class="num">19</span>K<span class="name">КАЛИЙ</span><span class="mass">39.0983</span></td>
+            <td class="element" data-group="5"><span class="num">20</span>Ca<span class="name">КАЛЬЦИЙ</span><span class="mass">40.078</span></td>
+            <td class="element" data-group="6"><span class="num">21</span>Sc<span class="name">СКАНДИЙ</span><span class="mass">44.9559</span></td>
+            <td class="element" data-group="6"><span class="num">22</span>Ti<span class="name">ТИТАН</span><span class="mass">47.867</span></td>
+            <td class="element" data-group="6"><span class="num">23</span>V<span class="name">ВАНАДИЙ</span><span class="mass">50.9415</span></td>
+            <td class="element" data-group="6"><span class="num">24</span>Cr<span class="name">ХРОМ</span><span class="mass">51.9961</span></td>
+            <td class="element" data-group="6"><span class="num">25</span>Mn<span class="name">МАРГАНЕЦ</span><span class="mass">54.938</span></td>
+            <td class="element" data-group="6"><span class="num">26</span>Fe<span class="name">ЖЕЛЕЗО</span><span class="mass">55.845</span></td>
+            <td class="element" data-group="6"><span class="num">27</span>Co<span class="name">КОБАЛЬТ</span><span class="mass">58.933</span></td>
+            <td class="element" data-group="6"><span class="num">28</span>Ni<span class="name">НИКЕЛЬ</span><span class="mass">58.6934</span></td>
+            <td class="element" data-group="6"><span class="num">29</span>Cu<span class="name">МЕДЬ</span><span class="mass">63.546</span></td>
+            <td class="element" data-group="6"><span class="num">30</span>Zn<span class="name">ЦИНК</span><span class="mass">65.38</span></td>
+            <td class="element" data-group="7"><span class="num">31</span>Ga<span class="name">ГАЛЛИЙ</span><span class="mass">69.723</span></td>
+            <td class="element" data-group="7"><span class="num">32</span>Ge<span class="name">ГЕРМАНИЙ</span><span class="mass">72.63</span></td>
+            <td class="element" data-group="1"><span class="num">33</span>As<span class="name">МЫШЬЯК</span><span class="mass">74.9216</span></td>
+            <td class="element" data-group="1"><span class="num">34</span>Se<span class="name">СЕЛЕН</span><span class="mass">78.96</span></td>
+            <td class="element" data-group="3"><span class="num">35</span>Br<span class="name">БРОМ</span><span class="mass">79.904</span></td>
+            <td class="element" data-group="2"><span class="num">36</span>Kr<span class="name">КРИПТОН</span><span class="mass">83.798</span></td>
         </tr>
+        <!-- СТРОКА 5-->
         <tr>
             <td>5</td>
-            <td class="element">Rb<span class="name">РУБИДИЙ</span></td>
-            <td class="element">Sr<span class="name">СТРОНЦИЙ</span></td>
-            <td class="element">Y<span class="name">ИТТРИЙ</span></td>
-            <td class="element">Zr<span class="name">ЦИРКОНИЙ</span></td>
-            <td class="element">Nb<span class="name">НИОБИЙ</span></td>
-            <td class="element">Mo<span class="name">МОЛИБДЕН</span></td>
-            <td class="element">Tc<span class="name">ТЕХНЕЦИЙ</span></td>
-            <td class="element">Ru<span class="name">РУТЕНИЙ</span></td>
-            <td class="element">Rh<span class="name">РОДИЙ</span></td>
-            <td class="element">Pd<span class="name">ПАЛЛАДИЙ</span></td>
-            <td class="element">Ag<span class="name">СЕРЕБРО</span></td>
-            <td class="element">Cd<span class="name">КАДМИЙ</span></td>
-            <td class="element">In<span class="name">ИНДИЙ</span></td>
-            <td class="element">Sn<span class="name">ОЛОВО</span></td>
-            <td class="element">Sb<span class="name">СУРЬМА</span></td>
-            <td class="element">Te<span class="name">ТЕЛЛУР</span></td>
-            <td class="element">I<span class="name">ИОД</span></td>
-            <td class="element">Xe<span class="name">КСЕНОН</span></td>
+            <td class="element" data-group="4"><span class="num">37</span>Rb<span class="name">РУБИДИЙ</span><span class="mass">85.468</span></td>
+            <td class="element" data-group="5"><span class="num">38</span>Sr<span class="name">СТРОНЦИЙ</span><span class="mass">87.62</span></td>
+            <td class="element" data-group="6"><span class="num">39</span>Y<span class="name">ИТТРИЙ</span><span class="mass">88.906</span></td>
+            <td class="element" data-group="6"><span class="num">40</span>Zr<span class="name">ЦИРКОНИЙ</span><span class="mass">91.224</span></td>
+            <td class="element" data-group="6"><span class="num">41</span>Nb<span class="name">НИОБИЙ</span><span class="mass">92.906</span></td>
+            <td class="element" data-group="6"><span class="num">42</span>Mo<span class="name">МОЛИБДЕН</span><span class="mass">95.96</span></td>
+            <td class="element" data-group="6"><span class="num">43</span>Tc<span class="name">ТЕХНЕЦИЙ</span><span class="mass">97.907</span></td>
+            <td class="element" data-group="6"><span class="num">44</span>Ru<span class="name">РУТЕНИЙ</span><span class="mass">101.07</span></td>
+            <td class="element" data-group="6"><span class="num">45</span>Rh<span class="name">РОДИЙ</span><span class="mass">102.91</span></td>
+            <td class="element" data-group="6"><span class="num">46</span>Pd<span class="name">ПАЛЛАДИЙ</span><span class="mass">106.42</span></td>
+            <td class="element" data-group="6"><span class="num">47</span>Ag<span class="name">СЕРЕБРО</span><span class="mass">107.87</span></td>
+            <td class="element" data-group="6"><span class="num">48</span>Cd<span class="name">КАДМИЙ</span><span class="mass">112.41</span></td>
+            <td class="element" data-group="7"><span class="num">49</span>In<span class="name">ИНДИЙ</span><span class="mass">114.82</span></td>
+            <td class="element" data-group="7"><span class="num">50</span>Sn<span class="name">ОЛОВО</span><span class="mass">118.71</span></td>
+            <td class="element" data-group="7"><span class="num">51</span>Sb<span class="name">СУРЬМА</span><span class="mass">121.76</span></td>
+            <td class="element" data-group="1"><span class="num">52</span>Te<span class="name">ТЕЛЛУР</span><span class="mass">127.60</span></td>
+            <td class="element" data-group="3"><span class="num">53</span>I<span class="name">ИОД</span><span class="mass">126.90</span></td>
+            <td class="element" data-group="2"><span class="num">54</span>Xe<span class="name">КСЕНОН</span><span class="mass">131.29</span></td>
         </tr>
+        <!-- СТРОКА 6-->
         <tr>
             <td>6</td>
-            <td class="element">Cs<span class="name">ЦЕЗИЙ</span></td>
-            <td class="element">Ba<span class="name">БАРИЙ</span></td>
-            <td></td>>
-            <td class="element">Hf<span class="name">ГАФНИЙ</span></td>
-            <td class="element">Ta<span class="name">ТАНТАЛ</span></td>
-            <td class="element">W<span class="name">ВОЛЬФРАМ</span></td>
-            <td class="element">Re<span class="name">РЕНИЙ</span></td>
-            <td class="element">Os<span class="name">ОСМИЙ</span></td>
-            <td class="element">Ir<span class="name">ИРИДИЙ</span></td>
-            <td class="element">Pt<span class="name">ПЛАТИНА</span></td>
-            <td class="element">Au<span class="name">ЗОЛОТО</span></td>
-            <td class="element">Hg<span class="name">РТУТЬ</span></td>
-            <td class="element">TL<span class="name">ТАЛЛИЙ</span></td>
-            <td class="element">Pb<span class="name">СВИНЕЦ</span></td>
-            <td class="element">Bi<span class="name">ВИСМУТ</span></td>
-            <td class="element">Po<span class="name">ПОЛОНИЙ</span></td>
-            <td class="element">At<span class="name">АСТАТ</span></td>
-            <td class="element">Rn<span class="name">РАДОН</span></td>
+            <td class="element" data-group="4"><span class="num">55</span>Cs<span class="name">ЦЕЗИЙ</span><span class="mass">132.91</span></td>
+            <td class="element" data-group="5"><span class="num">56</span>Ba<span class="name">БАРИЙ</span><span class="mass">137.33</span></td>
+            <td class="element" data-group="8"></td>>
+            <td class="element" data-group="6"><span class="num">72</span>Hf<span class="name">ГАФНИЙ</span><span class="mass">178.49</span></td>
+            <td class="element" data-group="6"><span class="num">73</span>Ta<span class="name">ТАНТАЛ</span><span class="mass">180.94</span></td>
+            <td class="element" data-group="6"><span class="num">74</span>W<span class="name">ВОЛЬФРАМ</span><span class="mass">183.85</span></td>
+            <td class="element" data-group="6"><span class="num">75</span>Re<span class="name">РЕНИЙ</span><span class="mass">186.2</span></td>
+            <td class="element" data-group="6"><span class="num">76</span>Os<span class="name">ОСМИЙ</span><span class="mass">190.2</span></td>
+            <td class="element" data-group="6"><span class="num">77</span>Ir<span class="name">ИРИДИЙ</span><span class="mass">192.2</span></td>
+            <td class="element" data-group="6"><span class="num">78</span>Pt<span class="name">ПЛАТИНА</span><span class="mass">195.09</span></td>
+            <td class="element" data-group="6"><span class="num">79</span>Au<span class="name">ЗОЛОТО</span><span class="mass">196.96</span></td>
+            <td class="element" data-group="6"><span class="num">80</span>Hg<span class="name">РТУТЬ</span><span class="mass">200.59</span></td>
+            <td class="element" data-group="7"><span class="num">81</span>TL<span class="name">ТАЛЛИЙ</span><span class="mass">204.37</span></td>
+            <td class="element" data-group="7"><span class="num">82</span>Pb<span class="name">СВИНЕЦ</span><span class="mass">207.19</span></td>
+            <td class="element" data-group="7"><span class="num">83</span>Bi<span class="name">ВИСМУТ</span><span class="mass">208.98</span></td>
+            <td class="element" data-group="7"><span class="num">84</span>Po<span class="name">ПОЛОНИЙ</span><span class="mass">208.98</span></td>
+            <td class="element" data-group="3"><span class="num">85</span>At<span class="name">АСТАТ</span><span class="mass">209.98</span></td>
+            <td class="element" data-group="2"><span class="num">86</span>Rn<span class="name">РАДОН</span><span class="mass">222.01</span></td>
         </tr>
+        <!-- СТРОКА 7-->
         <tr>
             <td>7</td>
-            <td class="element">Fr<span class="name">ФРАНЦИЙ</span></td>
-            <td class="element">Ra<span class="name">РАДИЙ</span></td>
-            <td></td>>
-            <td class="element">Rf<span class="name">РЕЗЕРФРОДИЙ</span></td>
-            <td class="element">Db<span class="name">ДУБНИЙ</span></td>
-            <td class="element">Sg<span class="name">СИБОРГИЙ</span></td>
-            <td class="element">Bh<span class="name">БОРИЙ</span></td>
-            <td class="element">Hs<span class="name">ХАССИЙ</span></td>
-            <td class="element">Mt<span class="name">МЕЙНТЕРИЙ</span></td>
-            <td class="element">Ds<span class="name">ДАРМШТАДИЙ</span></td>
-            <td class="element">Rg<span class="name">РЕНТГЕНИЙ</span></td>
-            <td class="element">Cn<span class="name">КОПЕРНИЦИЙ</span></td>
-            <td class="element">Nh<span class="name">НИХОНИЙ</span></td>
-            <td class="element">Fl<span class="name">ФЛЕРОВИЙ</span></td>
-            <td class="element">Mc<span class="name">МОСКОВИЙ</span></td>
-            <td class="element">Mc<span class="name">ЛИВЕРМОРИЙ</span></td>
-            <td class="element">Lv<span class="name">ТЕННЕССИН</span></td>
-            <td class="element">Ts<span class="name">ОГАНЕСОН</span></td>
+            <td class="element" data-group="4"><span class="num">87</span>Fr<span class="name">ФРАНЦИЙ</span><span class="mass">223.02</span></td>
+            <td class="element" data-group="5"><span class="num">88</span>Ra<span class="name">РАДИЙ</span><span class="mass">226.02</span></td>
+            <td class="element" data-group="9"></td>>
+            <td class="element" data-group="6"><span class="num">104</span>Rf<span class="name">РЕЗЕРФРОДИЙ</span><span class="mass">261</span></td>
+            <td class="element" data-group="6"><span class="num">105</span>Db<span class="name">ДУБНИЙ</span><span class="mass">268</span></td>
+            <td class="element" data-group="6"><span class="num">106</span>Sg<span class="name">СИБОРГИЙ</span><span class="mass">271</span></td>
+            <td class="element" data-group="6"><span class="num">107</span>Bh<span class="name">БОРИЙ</span><span class="mass">267</span></td>
+            <td class="element" data-group="6"><span class="num">108</span>Hs<span class="name">ХАССИЙ</span><span class="mass">269</span></td>
+            <td class="element" data-group="6"><span class="num">109</span>Mt<span class="name">МЕЙНТЕРИЙ</span><span class="mass">276</span></td>
+            <td class="element" data-group="6"><span class="num">110</span>Ds<span class="name">ДАРМШТАДИЙ</span><span class="mass">276</span></td>
+            <td class="element" data-group="6"><span class="num">111</span>Rg<span class="name">РЕНТГЕНИЙ</span><span class="mass">280</span></td>
+            <td class="element" data-group="6"><span class="num">112</span>Cn<span class="name">КОПЕРНИЦИЙ</span><span class="mass">285</span></td>
+            <td class="element" data-group="7"><span class="num">113</span>Nh<span class="name">НИХОНИЙ</span><span class="mass">284</span></td>
+            <td class="element" data-group="7"><span class="num">114</span>Fl<span class="name">ФЛЕРОВИЙ</span><span class="mass">289</span></td>
+            <td class="element" data-group="7"><span class="num">115</span>Mc<span class="name">МОСКОВИЙ</span><span class="mass">288</span></td>
+            <td class="element" data-group="7"><span class="num">116</span>Mc<span class="name">ЛИВЕРМОРИЙ</span><span class="mass">293</span></td>
+            <td class="element" data-group="3"><span class="num">117</span>Lv<span class="name">ТЕННЕССИН</span><span class="mass">294</span></td>
+            <td class="element" data-group="2"><span class="num">118</span>Ts<span class="name">ОГАНЕСОН</span><span class="mass">294</span></td>
         </tr>
+        <!-- СТРОКА лантаниды-->
         <tr>
             <td colspan="3">ЛАНТАНОИДЫ</td>
             <td></td>
-            <td class="element">La<span class="name">ЛАНТАН</span></td>
-            <td class="element">Ce<span class="name">ЦЕРИЙ</span></td>
-            <td class="element">Pr<span class="name">ПРАЗЕОДИМ</span></td>
-            <td class="element">Nd<span class="name">НЕОДИМ</span></td>
-            <td class="element">Pm<span class="name">ПРОМЕТИЙ</span></td>
-            <td class="element">Sm<span class="name">САМАРИЙ</span></td>
-            <td class="element">Eu<span class="name">ЕВРОПИЙ</span></td>
-            <td class="element">Gd<span class="name">ГАДОЛИНИЙ</span></td>
-            <td class="element">Td<span class="name">ТЕРБИЙ</span></td>
-            <td class="element">Dy<span class="name">ДИСПРОЗИЙ</span></td>
-            <td class="element">Ho<span class="name">ГОЛЬМИЙ</span></td>
-            <td class="element">Er<span class="name">ЭРБИЙ</span></td>
-            <td class="element">Tm<span class="name">ТУЛИЙ</span></td>
-            <td class="element">Yb<span class="name">ИТТЕРБИЙ</span></td>
-            <td class="element">Lu<span class="name">ЛЮТЕЦИЙ</span></td>
+            <td class="element" data-group="8"><span class="num">57</span>La<span class="name">ЛАНТАН</span><span class="mass">138.91</span></td>
+            <td class="element" data-group="8"><span class="num">58</span>Ce<span class="name">ЦЕРИЙ</span><span class="mass">140.12</span></td>
+            <td class="element" data-group="8"><span class="num">59</span>Pr<span class="name">ПРАЗЕОДИМ</span><span class="mass">140.90</span></td>
+            <td class="element" data-group="8"><span class="num">60</span>Nd<span class="name">НЕОДИМ</span><span class="mass">144.24</span></td>
+            <td class="element" data-group="8"><span class="num">61</span>Pm<span class="name">ПРОМЕТИЙ</span><span class="mass">145</span></td>
+            <td class="element" data-group="8"><span class="num">62</span>Sm<span class="name">САМАРИЙ</span><span class="mass">150.35</span></td>
+            <td class="element" data-group="8"><span class="num">63</span>Eu<span class="name">ЕВРОПИЙ</span><span class="mass">151.96</span></td>
+            <td class="element" data-group="8"><span class="num">64</span>Gd<span class="name">ГАДОЛИНИЙ</span><span class="mass">157.25</span></td>
+            <td class="element" data-group="8"><span class="num">65</span>Td<span class="name">ТЕРБИЙ</span><span class="mass">158.92</span></td>
+            <td class="element" data-group="8"><span class="num">66</span>Dy<span class="name">ДИСПРОЗИЙ</span><span class="mass">162.50</span></td>
+            <td class="element" data-group="8"><span class="num">67</span>Ho<span class="name">ГОЛЬМИЙ</span><span class="mass">164.93</span></td>
+            <td class="element" data-group="8"><span class="num">68</span>Er<span class="name">ЭРБИЙ</span><span class="mass">167.26</span></td>
+            <td class="element" data-group="8"><span class="num">69</span>Tm<span class="name">ТУЛИЙ</span><span class="mass">168.93</span></td>
+            <td class="element" data-group="8"><span class="num">70</span>Yb<span class="name">ИТТЕРБИЙ</span><span class="mass">173.04</span></td>
+            <td class="element" data-group="8"><span class="num">71</span>Lu<span class="name">ЛЮТЕЦИЙ</span><span class="mass">174.97</span></td>
         </tr>
+        <!-- СТРОКА актиниды-->
         <tr>
             <td colspan="3">АКТИНОИДЫ</td>
             <td></td>
-            <td class="element">Ac<span class="name">АКТИНИЙ</span></td>
-            <td class="element">Th<span class="name">ТОРИЙ</span></td>
-            <td class="element">Pa<span class="name">ПРОТАКТИНИЙ</span></td>
-            <td class="element">U<span class="name">УРАН</span></td>
-            <td class="element">Np<span class="name">НЕПТУНИЙ</span></td>
-            <td class="element">Pu<span class="name">ПЛУТОНИЙ</span></td>
-            <td class="element">Am<span class="name">АМЕРИЦКИЙ</span></td>
-            <td class="element">Cm<span class="name">КЮРИЙ</span></td>
-            <td class="element">Bk<span class="name">БЕРКЛИЙ</span></td>
-            <td class="element">Cf<span class="name">КАЛИФОРНИЙ</span></td>
-            <td class="element">Es<span class="name">ЭЙНШТЕЙНИЙ</span></td>
-            <td class="element">Fm<span class="name">ФЕРМИЙ</span></td>
-            <td class="element">Md<span class="name">МЕНДЕЛЕВИЙ</span></td>
-            <td class="element">No<span class="name">НОБЕЛИЙ</span></td>
-            <td class="element">Lr<span class="name">ЛОУРЕНСКИЙ</span></td>
+            <td class="element" data-group="9"><span class="num">89</span>Ac<span class="name">АКТИНИЙ</span><span class="mass">227.02</span></td>
+            <td class="element" data-group="9"><span class="num">90</span>Th<span class="name">ТОРИЙ</span><span class="mass">232.03</span></td>
+            <td class="element" data-group="9"><span class="num">91</span>Pa<span class="name">ПРОТАКТИНИЙ</span><span class="mass">231.03</span></td>
+            <td class="element" data-group="9"><span class="num">92</span>U<span class="name">УРАН</span><span class="mass">238.02</span></td>
+            <td class="element" data-group="9"><span class="num">93</span>Np<span class="name">НЕПТУНИЙ</span><span class="mass">237.04</span></td>
+            <td class="element" data-group="9"><span class="num">94</span>Pu<span class="name">ПЛУТОНИЙ</span><span class="mass">244.06</span></td>
+            <td class="element" data-group="9"><span class="num">95</span>Am<span class="name">АМЕРИЦКИЙ</span><span class="mass">243.06</span></td>
+            <td class="element" data-group="9"><span class="num">96</span>Cm<span class="name">КЮРИЙ</span><span class="mass">247.07</span></td>
+            <td class="element" data-group="9"><span class="num">97</span>Bk<span class="name">БЕРКЛИЙ</span><span class="mass">247.07</span></td>
+            <td class="element" data-group="9"><span class="num">98</span>Cf<span class="name">КАЛИФОРНИЙ</span><span class="mass">251.07</span></td>
+            <td class="element" data-group="9"><span class="num">99</span>Es<span class="name">ЭЙНШТЕЙНИЙ</span><span class="mass">252.08</span></td>
+            <td class="element" data-group="9"><span class="num">100</span>Fm<span class="name">ФЕРМИЙ</span><span class="mass">257.08</span></td>
+            <td class="element" data-group="9"><span class="num">101</span>Md<span class="name">МЕНДЕЛЕВИЙ</span><span class="mass">258.09</span></td>
+            <td class="element" data-group="9"><span class="num">102</span>No<span class="name">НОБЕЛИЙ</span><span class="mass">259.10</span></td>
+            <td class="element" data-group="9"><span class="num">103</span>Lr<span class="name">ЛОУРЕНСКИЙ</span><span class="mass">260.10 </span></td>
         </tr>
     </table>
 </body>

@@ -14,8 +14,8 @@ body {
 }
 
 td, th {
-    width: 100px;
-    height: 50px;
+    width: 60px;
+    height: 100px;
     overflow: hidden;
     text-align: center;
     color: aliceblue;
@@ -24,9 +24,97 @@ td, th {
 /* Один класс для всех ячеек с элементами */
 .element {
     background-color: darkolivegreen;
+    transition: background-color 0.3s ease;
     color: white;
     font-size: 50px;
     font-weight: 700;
+}
+    /* Чтобы сам наведенный элемент не терял стиль при наведении */
+    .element:hover {
+        transform: scale(1.08) !important;
+        z-index: 10 !important;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.3) !important;
+    }
+
+/* Группа 1 */
+table:has(.element[data-group="1"]:hover) .element[data-group="1"] {
+    background-color: #FF6B35 !important;
+    color: #1a1a1a !important;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.6);
+}
+
+/* Группа 2 - ФИОЛЕТОВЫЙ */
+table:has(.element[data-group="2"]:hover) .element[data-group="2"] {
+    background-color: #9B59B6 !important; /* Фиолетовый */
+    color: white !important;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(155, 89, 182, 0.6);
+}
+
+/* Группа 3 */
+table:has(.element[data-group="3"]:hover) .element[data-group="3"] {
+    background-color: #E74C3C !important;
+    color: #1a1a1a !important;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(255, 179, 71, 0.6);
+}
+
+/* Группа 4 - Зеленый */
+table:has(.element[data-group="4"]:hover) .element[data-group="4"] {
+    background-color: #10AC84 !important;
+    color: white !important;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(16, 172, 132, 0.6);
+}
+
+/* Группа 5 - Салатовый */
+table:has(.element[data-group="5"]:hover) .element[data-group="5"] {
+    background-color: #6AB04C !important;
+    color: white !important;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(106, 176, 76, 0.6);
+}
+
+/* Группа 6 - АКВА */
+table:has(.element[data-group="6"]:hover) .element[data-group="6"] {
+    background-color: #00FFFF !important; /* Аква */
+    color: #1a1a1a !important;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+/* Группа 7 - Синий */
+table:has(.element[data-group="7"]:hover) .element[data-group="7"] {
+    background-color: #574B90 !important;
+    color: white !important;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(10, 189, 227, 0.6);
+}
+
+/* Группа 8 - Золотой */
+table:has(.element[data-group="8"]:hover) .element[data-group="8"] {
+    background-color: #F0932B !important;
+    color: #1a1a1a !important;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(240, 147, 43, 0.6);
+}
+
+/* Группа 9 - Желто-зеленый */
+table:has(.element[data-group="9"]:hover) .element[data-group="9"] {
+    background-color: #F9CA24 !important;
+    color: #1a1a1a !important;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(249, 202, 36, 0.6);
 }
 
 /* Один класс для всех названий под символом */
@@ -39,6 +127,22 @@ td, th {
 .num {
     display: block;
     font-size: 13px;
-    text-align: right; /* номер в правом углу, как в настоящей таблице */
+    text-align: left; /* номер в правом углу, как в настоящей таблице */
     font-weight: 400; /* не жирный, в отличие от символа */
+}
+
+.mass {
+    display: block;
+    font-size: 11px;
+    color: white;
+}
+
+table:has(.element[data-group="1"]:hover) .element[data-group="1"] .name,
+table:has(.element[data-group="1"]:hover) .element[data-group="1"] .mass {
+    color: #1a1a1a !important;
+}
+
+table:has(.element[data-group="2"]:hover) .element[data-group="2"] .name,
+table:has(.element[data-group="2"]:hover) .element[data-group="2"] .mass {
+    color: #1a1a1a !important;
 }
