@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="events.css" >
+    <title>JavaScript Events</title>
+</head>
+<body>
+    <h1>JavaScript Events</h1>
+    <div class="load-image">
+        <div class="image-container">
+            <img alt="Фото студента" id="image">
+        </div>
+        <input type="file" id="image-file" onchange="SetImage()">
+        <div class="debug"></div>
+    </div>
+    <script>
+        function SetImage() {
+            let filename = document.getElementById("image-file");
+            // let reader = new FileReader();
+            //document.getElementById("debug").innerHTML = filename.files[0].name;
+            let file = filename.files[0];
+            document.getElementById("image").src = URL.createObjectURL(file);
+            // reader.onload = function (e) {
+            // }
+            // reader.readAsDataURL(filename.files[0]);
+        }
+    </script>
+</body>
+</html>
