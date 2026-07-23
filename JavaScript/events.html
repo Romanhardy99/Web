@@ -18,13 +18,8 @@
     <script>
         function SetImage() {
             let filename = document.getElementById("image-file");
-            // let reader = new FileReader();
-            //document.getElementById("debug").innerHTML = filename.files[0].name;
             let file = filename.files[0];
             document.getElementById("image").src = URL.createObjectURL(file);
-            // reader.onload = function (e) {
-            // }
-            // reader.readAsDataURL(filename.files[0]);
         }
     </script>
 </body>
