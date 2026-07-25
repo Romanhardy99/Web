@@ -8,18 +8,40 @@
 </head>
 <body>
     <h1>JavaScript Events</h1>
-    <div class="load-image">
-        <div class="image-container">
-            <img alt="Фото студента" id="image">
+
+    <div class="images-and-colors">
+        <div class="load-image">
+            <div class="image-container">
+                <img alt="Фото студента" id="image">
+            </div>
+            <input type="file" id="image-file" onchange="setImage()">
+            <div class="debug"></div>
         </div>
-        <input type="file" id="image-file" onchange="SetImage()">
-        <div class="debug"></div>
+
+        <div class="colors">
+            <div>
+                <label for="background-color">Выберите цвет фона:</label>
+                <input type="color" id="background-color" oninput="setBackgroundColor()"/>
+            </div>
+            <div>
+                <label for="foreground-color">Выберите цвет текста:</label>
+                <input type="color" id="foreground-color" oninput="setForegroundColor(event)"/>
+            </div>
+        </div>
     </div>
+
     <script>
-        function SetImage() {
+        function setImage() {
             let filename = document.getElementById("image-file");
             let file = filename.files[0];
             document.getElementById("image").src = URL.createObjectURL(file);
+        }
+        function setBackgroundColor() {
+    document.body.style.backgroundColor = document.getElementById("background-color").value;
+}
+        function setForegroundColor(e)
+        {
+    document.body.style.color = e.target.value;
         }
     </script>
 </body>
