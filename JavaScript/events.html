@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="events.css">
     <title>JavaScript Events</title>
 </head>
-<body>
+<body class="light">
     <div class="header">
         <h3>Header</h3>
         <h3 id="mouse-coords"></h3>
+        <div id="switch-background"></div>
+        <!--<img src="moon.png" id="switch-background"/>-->
     </div>
     <h1>JavaScript Events</h1>
 
@@ -64,6 +66,15 @@
         document.addEventListener("mousemove", trackMouse);
         function trackMouse(e) {
             document.getElementById("mouse-coords").innerHTML = `Mouse: X = ${e.clientX}, Y = ${e.clientY}`;
+        }
+
+document.getElementById("switch-background").addEventListener("click", switchBackground);
+        function switchBackground(e)
+        {
+            // console.log(e.target.id);
+            // console.log(e.target.src);
+            // e.target.src = (e.target.src.includes('moon.png') ? 'sun.png' : 'moon.png');
+            document.body.className = document.body.className === 'dark' ? 'light' : 'dark'; 
         }
     </script>
 </body>
