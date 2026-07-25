@@ -3,10 +3,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="events.css" >
+    <link rel="stylesheet" href="events.css">
     <title>JavaScript Events</title>
 </head>
 <body>
+    <div class="header">
+        <h3>Header</h3>
+        <h3 id="mouse-coords"></h3>
+    </div>
     <h1>JavaScript Events</h1>
 
     <div class="images-and-colors">
@@ -21,11 +25,13 @@
         <div class="colors">
             <div>
                 <label for="background-color">Выберите цвет фона:</label>
-                <input type="color" id="background-color" oninput="setBackgroundColor()"/>
+                <input type="color" id="background-color" oninput="setColor(event)" />
+                <!--<input type="color" id="background-color" oninput="setBackgroundColor()"/>-->
             </div>
             <div>
                 <label for="foreground-color">Выберите цвет текста:</label>
-                <input type="color" id="foreground-color" oninput="setForegroundColor(event)"/>
+                <input type="color" id="foreground-color" oninput="setColor(event)" />
+                <!--<input type="color" id="foreground-color" oninput="setForegroundColor(event)"/>-->
             </div>
         </div>
     </div>
@@ -37,11 +43,27 @@
             document.getElementById("image").src = URL.createObjectURL(file);
         }
         function setBackgroundColor() {
-    document.body.style.backgroundColor = document.getElementById("background-color").value;
-}
-        function setForegroundColor(e)
-        {
-    document.body.style.color = e.target.value;
+            document.body.style.backgroundColor = document.getElementById("background-color").value;
+        }
+        function setForegroundColor(e) {
+            document.body.style.color = e.target.value;
+        }
+        function setColor(e) {
+            console.log(e.target)
+            console.log(document.body.style['backgroundColor']);
+            console.log(document.body.style['background-color']);
+
+            document.body.style[e.target.id === 'background-color' ? 'backgroundColor' : 'color'] = e.target.value;
+            // (e.target.id === "background-color" ? document.body.style.backgroundColor : document.body.style.color;
+            /*if(e.target.id === "background-color")
+                document.body.style.backgroundColor = e.target.value;
+            else
+            document.body.style.color = e.target.value;*/
+        }
+        console.log(true === 1);
+        document.addEventListener("mousemove", trackMouse);
+        function trackMouse(e) {
+            document.getElementById("mouse-coords").innerHTML = `Mouse: X = ${e.clientX}, Y = ${e.clientY}`;
         }
     </script>
 </body>
