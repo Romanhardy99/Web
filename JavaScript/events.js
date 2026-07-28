@@ -54,8 +54,8 @@ function tick_timer() {
     document.getElementById("seconds").innerHTML =      addLeadingZero(time.getSeconds());
 
     document.getElementById("years").innerHTML =        addLeadingZero(time.getFullYear());
-    document.getElementById("month").innerHTML =        addLeadingZero(time.getMonth() + 1);
-    document.getElementById("day").innerHTML =          addLeadingZero(time.getDate());
+    document.getElementById("months").innerHTML =        addLeadingZero(time.getMonth() + 1);
+    document.getElementById("days").innerHTML =          addLeadingZero(time.getDate());
 
     document.getElementById("day-of-week").innerHTML = time.toLocaleDateString("ru", { weekday: 'long' });
 
