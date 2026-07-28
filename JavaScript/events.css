@@ -1,5 +1,6 @@
-﻿.body{
-    transition: background-color 3s, color 3s;
+﻿body {
+    transition: background-color var(--transition-time, 3s), 
+                color           var(--transition-time, 3s);
 }
 .header{
     display:flex;
@@ -18,7 +19,7 @@
     height:32px;
     background-size:32px 32px;
     /*transition: background-image 3s, filter 3s;*/
-    transition: 3s;
+    transition: var(--transition-time, 3s);
 }
 .dark{
     background-color:#323232;
