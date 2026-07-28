@@ -15,79 +15,60 @@
     </div>
     <h1>JavaScript Events</h1>
 
-    <div class="images-and-colors">
-        <div class="load-image">
-            <div class="image-container">
-                <img alt="Фото студента" id="image">
+    <details>
+        <summary>Картинки и цветы</summary>
+        <div class="images-and-colors">
+            <div class="load-image">
+                <div class="image-container">
+                    <img alt="Фото студента" id="image">
+                </div>
+                <input type="file" id="image-file" onchange="setImage()">
+                <div class="debug"></div>
             </div>
-            <input type="file" id="image-file" onchange="setImage()">
-            <div class="debug"></div>
-        </div>
 
-        <div class="colors">
-            <div>
-                <label for="transition-time">Длительность перехода:</label>
-                <input type="range" id="transition-time"
-                       min="0" max="5" step="0.1" value="3"
-                       oninput="setTransitionTime(event)"/>
-                <span id="transition-time-value">3 c</span>
+            <div class="colors">
+                <div>
+                    <label for="transition-time">Длительность перехода:</label>
+                    <input type="range" id="transition-time"
+                           min="0" max="5" step="0.1" value="3"
+                           oninput="setTransitionTime(event)" />
+                    <span id="transition-time-value">3 c</span>
+                </div>
+                <div>
+                    <label for="background-color">Выберите цвет фона:</label>
+                    <input type="color" id="background-color" oninput="setColor(event)" />
+                    <!--<input type="color" id="background-color" oninput="setBackgroundColor()"/>-->
+                </div>
+                <div>
+                    <label for="foreground-color">Выберите цвет текста:</label>
+                    <input type="color" id="foreground-color" oninput="setColor(event)" />
+                    <!--<input type="color" id="foreground-color" oninput="setForegroundColor(event)"/>-->
+                </div>
             </div>
-            <div>
-                <label for="background-color">Выберите цвет фона:</label>
-                <input type="color" id="background-color" oninput="setColor(event)" />
-                <!--<input type="color" id="background-color" oninput="setBackgroundColor()"/>-->
-            </div>
-            <div>
-                <label for="foreground-color">Выберите цвет текста:</label>
-                <input type="color" id="foreground-color" oninput="setColor(event)" />
-                <!--<input type="color" id="foreground-color" oninput="setForegroundColor(event)"/>-->
-            </div>
+        </div>
+    </details>
+
+    <h2 id="full-time"></h2>
+
+    <div id="clock">
+        <div id="current-time">
+            <span id="hours"></span>.
+            <span id="minutes"></span>.
+            <span id="seconds"></span>
+        </div>
+        <div id="current-date">
+            <span id="years"></span>.
+            <span id="months"></span>.
+            <span id="days"></span>
+        </div>
+        <div id="day-of-week"></div>
+        <div id="clock-controls">
+            <input type="checkbox" id="show-date"><label for="show-date">Показать дату</label>
+            <input type="checkbox" id="show-weekday"><label for="show-weekday">Показать день недели</label>
         </div>
     </div>
+    <script src="events.js">
 
-    <script>
-        function setImage() {
-            let filename = document.getElementById("image-file");
-            let file = filename.files[0];
-            document.getElementById("image").src = URL.createObjectURL(file);
-        }
-        function setBackgroundColor() {
-            document.body.style.backgroundColor = document.getElementById("background-color").value;
-        }
-        function setForegroundColor(e) {
-            document.body.style.color = e.target.value;
-        }
-        function setColor(e) {
-            console.log(e.target)
-            console.log(document.body.style['backgroundColor']);
-            console.log(document.body.style['background-color']);
-
-            document.body.style[e.target.id === 'background-color' ? 'backgroundColor' : 'color'] = e.target.value;
-            // (e.target.id === "background-color" ? document.body.style.backgroundColor : document.body.style.color;
-            /*if(e.target.id === "background-color")
-                document.body.style.backgroundColor = e.target.value;
-            else
-            document.body.style.color = e.target.value;*/
-        }
-        console.log(true === 1);
-        document.addEventListener("mousemove", trackMouse);
-        function trackMouse(e) {
-            document.getElementById("mouse-coords").innerHTML = `Mouse: X = ${e.clientX}, Y = ${e.clientY}`;
-        }
-
-document.getElementById("switch-background").addEventListener("click", switchBackground);
-        function switchBackground(e)
-        {
-            // console.log(e.target.id);
-            // console.log(e.target.src);
-            // e.target.src = (e.target.src.includes('moon.png') ? 'sun.png' : 'moon.png');
-    document.body.className = document.body.className === 'dark' ? 'light' : 'dark';
-}
-        function setTransitionTime(e)
-        {
-            document.documentElement.style.setProperty('--transition-time', `${e.target.value}s`);
-            document.getElementById('transition-time-value').textContent = `${e.target.value}c`;
-        }
     </script>
 </body>
 </html>
