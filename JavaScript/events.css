@@ -1,6 +1,10 @@
-﻿body {
-    transition: background-color var(--transition-time, 3s), 
-                color           var(--transition-time, 3s);
+﻿@font-face {
+    font-family: Digital-7 Mono;
+    src: url('file:///C:/Users/RadContext/source/repos/Web/JavaScript/events.html/digital-7(mono).ttf')
+}
+
+body {
+    transition: background-color var(--transition-time, 3s), color var(--transition-time, 3s);
 }
 .header{
     display:flex;
@@ -56,6 +60,7 @@
 }
 /*///////////////////////////////////////////*/
 #clock{
+    font-family:Digital-7 Mono;
     font-size:48px;
     text-align:center;
 }
