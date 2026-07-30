@@ -50,23 +50,56 @@
 
     <h2 id="full-time"></h2>
 
-    <div id="clock">
-        <div id="current-time">
-            <span id="hours"></span>.
-            <span id="minutes"></span>.
-            <span id="seconds"></span>
+    <details>
+        <summary>Clock</summary>
+        <div id="clock">
+            <div id="current-time">
+                <span id="hours"></span>.
+                <span id="minutes"></span>.
+                <span id="seconds"></span>
+            </div>
+            <div id="current-date">
+                <span id="years"></span>.
+                <span id="months"></span>.
+                <span id="days"></span>
+            </div>
+            <div id="day-of-week"></div>
+            <div id="clock-controls">
+                <input type="checkbox" id="show-date"><label for="show-date">Показать дату</label>
+                <input type="checkbox" id="show-weekday"><label for="show-weekday">Показать день недели</label>
+            </div>
         </div>
-        <div id="current-date">
-            <span id="years"></span>.
-            <span id="months"></span>.
-            <span id="days"></span>
-        </div>
-        <div id="day-of-week"></div>
-        <div id="clock-controls">
-            <input type="checkbox" id="show-date"><label for="show-date">Показать дату</label>
-            <input type="checkbox" id="show-weekday"><label for="show-weekday">Показать день недели</label>
-        </div>
+    </details>
+
+    <div id="countdown-timer">
+        <h2>Countdown timer</h2>
+        <input type="date" id="target-date" value="2026-08-01" />
+        <input type="time" id="target-time" value="22:00" />
+        <input type="button" id="btn-start" value="Start" />
     </div>
+    <div id="debug">
+        <label for="target-date-value">Target date:</label><div id="target-date-value"></div><br />
+        <label for="target-time-value">Target time:</label><div id="target-time-value"></div><br />
+        <label for="timezone">Timezone:</label><div id="timezone"></div><br />
+        <label for="duration">Duration:</label><div id="duration"></div><br />
+        <label for="timestamp">Timestamp:</label><div id="timestamp"></div><br />
+    </div>
+    <div id="display">
+        <div class="time-block">
+            <div id="hours-unit" class="time-unit"></div>
+            <div id="hours-marker" class="time-marker">Hours</div>
+        </div>
+        <div class="time-block">
+            <div id="minutes-unit" class="time-unit"></div>
+            <div id="minutes-marker" class="time-marker">Minutes</div>
+        </div>
+        <div class="time-block">
+            <div id="seconds-unit" class="time-unit"></div>
+            <div id="seconds-marker" class="time-marker">Seconds</div>
+        </div>
+
+    </div>
+
     <script src="events.js">
 
     </script>
