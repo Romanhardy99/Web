@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fib.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Домашняя работа по JavaScript</title>
+</head>
+<body>
+    <div class="wrap">
+
+        <h1>Домашняя работа по JavaScript</h1>
+        <p class="sub">Степень числа и ряд Фибоначчи</p>
+
+        <!-- ============ Задание 1 ============ -->
+        <section>
+            <h2>1. Возведение числа в степень</h2>
+            <p class="hint">Введите основание и показатель степени (целый, может быть отрицательным).</p>
+            <div class="row">
+                <div class="field">
+                    <label for="base">Число (основание)</label>
+                    <input id="base" type="number" value="2" step="any">
+                </div>
+                <div class="field">
+                    <label for="exp">Степень</label>
+                    <input id="exp" type="number" value="10" step="1">
+                </div>
+                <button onclick="showPower()">Вычислить</button>
+            </div>
+            <div class="out" id="out1"></div>
+        </section>
+
+        <!-- ============ Задание 2 ============ -->
+        <section>
+            <h2>2. Ряд Фибоначчи до указанного предела</h2>
+            <p class="hint">Выводятся все члены ряда, не превышающие заданное значение.</p>
+            <div class="row">
+                <div class="field">
+                    <label for="limit">Предел (значение)</label>
+                    <input id="limit" type="number" value="100" step="1">
+                </div>
+                <button onclick="showFibToLimit()">Показать ряд</button>
+            </div>
+            <div class="out" id="out2"></div>
+        </section>
+
+        <!-- ============ Задание 3 ============ -->
+        <section>
+            <h2>3. Заданное количество чисел ряда Фибоначчи</h2>
+            <p class="hint">Выводится указанное количество первых членов ряда, начиная с 0.</p>
+            <div class="row">
+                <div class="field">
+                    <label for="count">Количество чисел</label>
+                    <input id="count" type="number" value="10" step="1" min="0">
+                </div>
+                <button onclick="showFibCount()">Показать ряд</button>
+            </div>
+            <div class="out" id="out3"></div>
+        </section>
+
+    </div>
+
+    <script src="fib.js">
+
+    </script>
+</body>
+</html>
